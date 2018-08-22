@@ -4,10 +4,10 @@
   "version": "0.0.1",
   "main": "src/index.js",
   "scripts": {
-    "add": "git add out/",
+    "add-files": "git add out/",
     "build": "next build",
     "commit": "git commit -m \"Deploy silky-react-table to gh-pages\"",
-    "deploy": "yarn remove-cache && yarn build && yarn export && yarn nojekyll && git add out/ && yarn commit && yarn push",
+    "deploy": "yarn remove-cache && yarn build && yarn export && yarn nojekyll && yarn add-files && yarn commit && yarn push",
     "dev": "next",
     "export": "next export",
     "nojekyll": "touch out/.nojekyll",
