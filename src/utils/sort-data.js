@@ -12,15 +12,14 @@ const getDescend = ifElse(isNil, always(descend), wrapCompare)
 
 export default (
   data,
-  {
-    sortDescending,
-    customSortAsc: customAsc,
-    customSortDesc: customDesc,
-    sortByColumn: column = 0,
-  }
+  { sortDescending, sortByColumn: column = 0, columnOptions = [] }
 ) => {
-  const ascending = getAscend(customAsc)
-  const descending = getDescend(customDesc)
+  const ascending = getAscend(
+    columnOptions[column] && columnOptions[column].sortAscFunction
+  )
+  const descending = getDescend(
+    columnOptions[column] && columnOptions[column].sortDescFunction
+  )
 
   return sort(
     ifElse(
