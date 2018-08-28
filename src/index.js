@@ -9,8 +9,8 @@ import or from 'ramda/src/or'
 import T from 'ramda/src/T'
 import tail from 'ramda/src/tail'
 import defaults from './defaults'
-import checkOptions from './utils/check-options'
 import getOptions from './utils/get-options'
+import checkColumnOptions from './utils/check-column-options'
 import {
   includesHeadAndFoot,
   includesHead,
@@ -30,7 +30,7 @@ const getDataBody = compose(
 export default ({ caption, options, tableData }) => {
   const tableOptions = getOptions(defaults, options)
   const { columnOptions, rowHeader, sortByColumn, sorted } = tableOptions
-  const validColumnOptions = checkOptions(head(tableData), columnOptions)
+  const validColumnOptions = checkColumnOptions(head(tableData), columnOptions)
 
   return (
     <table className={'silky-react-table'}>

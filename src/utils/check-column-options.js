@@ -10,4 +10,7 @@ const isValid = (sample, options) =>
  * @param {[object]} options columnOptions array defined in the talbe options.
  * @returns The options array or false if is not valid.
  */
-export default (sample, options) => isValid(sample, options) && options
+const checkColumnOptions = (sample, options) =>
+  isValid(sample, options) && options
+
+export default checkColumnOptions
