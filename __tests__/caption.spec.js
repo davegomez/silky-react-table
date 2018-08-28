@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import Caption from '../caption'
+import Caption from '../src/caption'
 
 test('is not instance of <Caption />', () => {
   const wrapper = shallow(<Caption caption={''} />)

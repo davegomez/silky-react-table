@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import Td from '../td'
+import Td from '../src/td'
 
 test('is not instance of <Td />', () => {
   const wrapper = shallow(<Td cellData={''} />)

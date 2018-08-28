@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import Tr from '../tr'
+import Tr from '../src/tr'
 
 const data = ['foo', 'bar']
 

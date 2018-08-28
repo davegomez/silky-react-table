@@ -1,4 +1,4 @@
-import checkColumnOptions from '../../utils/check-column-options'
+import checkColumnOptions from '../../src/utils/check-column-options'
 
 test('returns false if any parameter is empty', () => {
   expect(checkColumnOptions([], ['foo'])).toBe(false)

@@ -1,4 +1,4 @@
-import isHeaderCell from '../../utils/is-header-cell'
+import isHeaderCell from '../../src/utils/is-header-cell'
 
 test('is column header cell', () => {
   expect(isHeaderCell('col', 0)).toBe(true)

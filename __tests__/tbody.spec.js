@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import Tbody from '../tbody'
+import Tbody from '../src/tbody'
 
 const data = [[1, 2], [3, 4], [5, 6]]
 

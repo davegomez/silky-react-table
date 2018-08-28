@@ -1,6 +1,6 @@
-import getOptions from '../../utils/get-options'
-import sortData from '../../utils/sort-data'
-import defaults from '../../defaults'
+import getOptions from '../../src/utils/get-options'
+import sortData from '../../src/utils/sort-data'
+import defaults from '../../src/defaults'
 
 const data = [[2, 'qux', 4], [1, 'foo', 6], [3, 'bar', 5]]
 const datesData = [
@@ -77,8 +77,6 @@ test('dates ascending sort using a custom compare function', () => {
     sorted: true,
     columnOptions: [{ sortAscFunction: customSort }],
   })
-
-  console.log(options)
 
   expect(sortData(datesData, options)).toEqual([
     ['Sun Jan 29 2017 10:12:00 GMT-0500 (Eastern Standard Time)'],

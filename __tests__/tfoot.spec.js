@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import Tfoot from '../tfoot'
+import Tfoot from '../src/tfoot'
 
 const data = ['foo', 'bar']
 

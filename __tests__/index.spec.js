@@ -1,10 +1,10 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import Table from '../index'
-import Thead from '../thead'
-import Tbody from '../tbody'
-import defaults from '../defaults'
-import getOptions from '../utils/get-options'
+import Table from '../src/index'
+import Thead from '../src/thead'
+import Tbody from '../src/tbody'
+import defaults from '../src/defaults'
+import getOptions from '../src/utils/get-options'
 
 const data = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 

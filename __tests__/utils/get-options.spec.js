@@ -1,4 +1,4 @@
-import getOptions from '../../utils/get-options'
+import getOptions from '../../src/utils/get-options'
 
 test('override defaults if they are defined in the second object', () => {
   const original = { foo: 'bar' }

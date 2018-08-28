@@ -2,7 +2,7 @@ import {
   includesHead,
   includesFoot,
   includesHeadAndFoot,
-} from '../../utils/table-includes'
+} from '../../src/utils/table-includes'
 
 test('the table includes a header', () => {
   const options = { header: true, footer: false }

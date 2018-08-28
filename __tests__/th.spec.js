@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import Th from '../th'
+import Th from '../src/th'
 
 test('is not instance of <Th />', () => {
   const wrapper = shallow(<Th headerData={''} />)

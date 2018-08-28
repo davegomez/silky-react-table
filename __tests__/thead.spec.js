@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import Thead from '../thead'
+import Thead from '../src/thead'
 
 const data = ['foo', 'bar']
 
