@@ -1,7 +1,11 @@
 module.exports = function(wallaby) {
   return {
-    files: ['src/**/*.js?(x)', 'src/**/*.snap', '!src/**/*.spec.js?(x)'],
-    tests: ['src/**/*.spec.js?(x)'],
+    files: [
+      'src/**/*.js?(x)',
+      '__tests__/spec_helper.js',
+      '!__tests__/**/*.spec.js?(x)',
+    ],
+    tests: ['__tests__/**/*.spec.js?(x)'],
 
     env: {
       type: 'node',
