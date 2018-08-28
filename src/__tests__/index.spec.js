@@ -1,14 +1,14 @@
 import React from 'react'
-import merge from 'ramda/src/merge'
 import { shallow } from 'enzyme'
 import Table from '../index'
 import Thead from '../thead'
 import Tbody from '../tbody'
 import defaults from '../defaults'
+import getOptions from '../utils/get-options'
 
 const data = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 
-const tableOptions = merge(defaults)
+const tableOptions = getOptions(defaults)
 
 test('is not instance of <Table />', () => {
   const wrapper = shallow(<Table tableData={data} options={tableOptions({})} />)
